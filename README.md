@@ -40,9 +40,11 @@ To write or read data is simply, just create an object from the class 'KVDBTasks
 	
 Now 'sentence' object can be used like this:
 To write: 
+	
 	sentence.write(conn, packet);
 	
 To read:
+	
 	String read = sentence.read(conn);
 
 In the example above, first write the 'packet' to the connection and after read the response, which one is delivered as a single string (it could be encoded as json, xml or plain text).
