@@ -5,13 +5,14 @@ The java library interface for kvdb android backend
 
 The java library is built to controlling the kvdb backend development in erlang environment for accessing to the data via a single 'non-blocking' socket.
 
+Please, ignore the src code, the precompiled jar is now built. If you need compile with another java version or environment just pull the creation of a Makefile.
 
 Add jar to project
 ==================
 
 To use the library just copy the jar file under dist directory of this project to your android project (it could be made on any IDE as: NetBeans, Eclipse, etc..).
 
-The precompiled jar is built on java version 1.6.
+The precompiled jar is built on java version 1.6 and the default package is: com.zgbjgg.kvdb_android.
 
 
 Step by step: connecting and enjoying
