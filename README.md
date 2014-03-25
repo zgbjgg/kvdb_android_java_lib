@@ -24,8 +24,10 @@ __________
 This class manages the connection to the kvdb backend.
 To connect to the kvdb android backend just creates an object from the class 'KVDBSocket' like this:
 
+```java
 	KVDBSocket conn = new KVDBSocket();
 	conn.getConnection();
+```
   
 Now the object 'conn' can be used to write or read data from/to the backend.
 
@@ -36,16 +38,22 @@ _________
 This class writes or read under the connection to the kvdb backend.
 To write or read data is simply, just create an object from the class 'KVDBTasks';
 
+```java
 	KVDBTasks sentence = new KVDBTasks();
+```
 	
 Now 'sentence' object can be used like this:
 To write: 
 	
+```java	
 	sentence.write(conn, packet);
+```
 	
 To read:
-	
+
+```java	
 	String read = sentence.read(conn);
+```
 
 In the example above, first write the 'packet' to the connection and after read the response, which one is delivered as a single string (it could be encoded as json, xml or plain text).
 
@@ -56,11 +64,15 @@ __________
 This class creates a valid packet before send on the active connection.
 To make a valid packet first creates an instance of the class 'KVDBPacket':
 
+```java
 	KVDBPacket pack = new KVDBPacket();
+```
 	
 Then just use 'packet' object to encode:
 
+```java
 	String packet = pack.encode("GET", "/test", "Key");
+```
 	
 The example above could get the value on any table on the backend with the key=Key.
 
@@ -70,8 +82,9 @@ Troubleshooting
 
 Remember close the connection when you cannot use anymore, because the backend keep alive any connections and it will be out of heap or crashes come in, even in the application (apk):
 
+```java
 	conn.closeConnection();
-	
+```	
 
 Author
 ======
