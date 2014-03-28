@@ -65,7 +65,7 @@ Then just use 'packet' object to encode:
 The example above could get the value on any table on the backend with the key=Key.
 
 
-> In the Sample.java class there is an example of how use the backend connection and the actions related to the backend as storing new data, fetching data, updating data and deleting data.
+> In the ```Sample.java``` class there is an example of how use the backend connection and the actions related to the backend as storing new data, fetching data, updating data and deleting data. The module_test in the kvdb_android project is responsible for tracking the data and the table that is used on this example is ```your_table``` is also defined on the kvdb_android project under priv directory in the file ```kvdb_backend_tables``` 
 
 
 Troubleshooting
