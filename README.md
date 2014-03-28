@@ -18,7 +18,7 @@ The precompiled jar is built on java version 1.6 and the default package is: com
 step by step: connecting and enjoying
 =====================================
 
-KVDBSocket
+**KVDBSocket Class**
 __________
 
 This class manages the connection to the kvdb backend.
@@ -30,7 +30,7 @@ To connect to the kvdb android backend just creates an object from the class 'KV
 Now the object 'conn' can be used to write or read data from/to the backend.
 
 
-KVDBTasks
+**KVDBTasks Class**
 _________
 
 This class writes or read under the connection to the kvdb backend.
@@ -50,7 +50,7 @@ To read:
 In the example above, first write the 'packet' to the connection and after read the response, which one is delivered as a single string (it could be encoded as json, xml or plain text).
 
 
-KVDBPacket
+**KVDBPacket Class**
 __________
 
 This class creates a valid packet before send on the active connection.
