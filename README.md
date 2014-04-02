@@ -89,7 +89,7 @@ Sample Main Activity
 
 The ```SampleMainActiviti``` class shows how to implement the backend into an application (apk). Here can you see a screenshot of the app running in a device
 
-![alt text](https://github.com/zgbjgg/kvdb_android_java_lib/screenshot/screenshot.jpg "Test kvdb")
+![alt text](https://github.com/zgbjgg/kvdb_android_java_lib/blob/master/screenshot/screenshot.jpg "Test kvdb")
 
 
 Troubleshooting
