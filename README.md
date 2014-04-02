@@ -100,6 +100,10 @@ Remember close the connection when you cannot use anymore, because the backend k
 ```java
 	conn.closeConnection();
 ```
+If you experiment the error ```EACCESS (permission denied)``` then add the next line to your android manifest xml file:
+```xml
+	<uses-permission android:name="android.permission.INTERNET"/> 
+```
 Ping me if you need a precompiled erlang app kvdb_android for your application :)
 
 
