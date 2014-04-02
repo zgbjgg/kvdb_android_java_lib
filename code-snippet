@@ -1,0 +1,33 @@
+    ///////////////////////////////////////////////////////////////
+    //								 //
+    // MUST IMPLEMENT THIS METHODS INTO YOUR MAIN ACTIVITY CLASS //
+    //                              				 //
+    ///////////////////////////////////////////////////////////////
+
+
+    // Method setHomePath
+   
+    public String setHomePath(MainActivity main) {
+        SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(main);
+        SharedPreferences.Editor editor = mPrefs.edit();
+        String defValue = main.getDir("HOME", MainActivity.MODE_PRIVATE).getAbsolutePath();
+        String homePath = mPrefs.getString("home_path", defValue);
+        editor.putString("home_path", homePath);
+        editor.commit();
+        return homePath;
+    }
+
+    // Method readAsset
+
+    public void readAsset(String homePath, MainActivity main) throws IOException {
+        File f = new File(homePath + File.separator + KVDBSuite.KVDB_ANDROID_ZIP);
+        InputStream is = main.getAssets().open(KVDBSuite.KVDB_ANDROID_ZIP);
+        int size = is.available();
+        byte[] buffer = new byte[size];
+        is.read(buffer);
+        is.close();
+        FileOutputStream fos = new FileOutputStream(f);
+        fos.write(buffer);
+        fos.close();
+
+    }
