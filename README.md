@@ -18,6 +18,22 @@ The precompiled jar is built on java version 1.6 and the default package is: com
 step by step: connecting and enjoying
 =====================================
 
+**KVDBSuite class**
+__________
+
+This class manages the initialization of the kvdb backend for using into an application. The class contains methods to start the beam process as a daemon in the device.
+```java
+            // Start KVDB backend
+            KVDBSuite suite = new KVDBSuite();
+            homePath = this.setHomePath(this);
+            this.readAsset(homePath, this);
+            suite.unzip(homePath, "");
+            suite.init(homePath, false);
+```
+The above code snippet must be set before of all, and the methods setHomePath and readAsset must be declared into your java ```MainActivity``` class. The methods can be copied from the ```code-snippet``` file in this project. For include the kvdb android backend we recommend compile all src erlang code and compress as zip, then in your android project create a folder called ```assets``` and place the zip under this directory.
+
+> NOTE: the method ```setHomePath``` and ```readAsset``` receives a ```MainActivity``` as a parameter, is for that reason in the example we pass ```this``` as an argument. The ```zip4j library``` must be include manually as dependencie on your project!
+
 **KVDBSocket Class**
 __________
 
