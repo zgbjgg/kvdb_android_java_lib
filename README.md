@@ -100,6 +100,7 @@ Remember close the connection when you cannot use anymore, because the backend k
 ```java
 	conn.closeConnection();
 ```
+Ping me if you need a precompiled erlang app kvdb_android for your application :)
 
 
 Author
