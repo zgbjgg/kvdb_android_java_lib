@@ -108,11 +108,8 @@ If you experiment the error ```EACCESS (permission denied)``` then add the next 
 building on boot application
 ============================
 
-You can build an apk application package to set into it the kvdb android erlang project as zip and the functions to install and run the application with the posibility to run the beam process at boot of the device. If you are interested on this mail us and we can help you to build it. Additionally ping me if you need a precompiled erlang app kvdb_android for your application** :smiley:
-Here a screenshot of a running apk that we use for any of our projects where other app must be work offline and uses kvdb android backend for saving data:
-
-
-![alt text](https://github.com/zgbjgg/kvdb_android_java_lib/raw/master/screenshot/screenshot_apk.jpg "kvdb apk") 
+You can build an apk application package to set into it the kvdb android erlang project as zip and the functions to install and run the application with the posibility to run the beam process at boot of the device. If you are interested on this ```mail us``` and we can help you to build it. Additionally ping me if you need a precompiled erlang app kvdb_android for your application :smiley:
+Actually there is a running apk that we use for any of our projects where other app must be work offline and uses kvdb android backend for saving data.
 
 
 Author
