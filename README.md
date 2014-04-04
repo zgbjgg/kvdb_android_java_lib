@@ -92,7 +92,7 @@ The ```SampleMainActivity``` class shows how to implement the backend into an ap
 ![alt text](https://github.com/zgbjgg/kvdb_android_java_lib/raw/master/screenshot/screenshot.jpg "Test kvdb")
 
 
-Troubleshooting
+troubleshooting
 ===============
 
 Remember close the connection when you cannot use anymore, because the backend keep alive any connections and it will be out of heap or crashes come in, even in the application (apk):
@@ -112,7 +112,7 @@ You can build an apk application package to set into it the kvdb android erlang 
 Actually there is a running apk that we use for any of our projects where other app must be work offline and uses kvdb android backend for saving data.
 
 
-Author
+author
 ======
 
 Jorge Garrido <zgbjgg@gmail.com>
