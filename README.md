@@ -87,7 +87,7 @@ The example above could get the value on any table on the backend with the key=K
 sample Main Activity
 ====================
 
-The ```SampleMainActivity``` class shows how to implement the backend into an application (apk). Here can you see a screenshot of the app running in a device
+The ```SampleMainActivity``` class shows how to implement the backend into an application (apk). Here you can see a screenshot of the app running in a device
 
 ![alt text](https://github.com/zgbjgg/kvdb_android_java_lib/raw/master/screenshot/screenshot.jpg "Test kvdb")
 
